@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Редактори комп'ютерної графіки</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@450;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pic/logo-icon.png" type="image/icon type">
+</head>
+<body>
+    <div class="container" style="background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(15,25,30,0.9)),url(pic/q4-alt.jpg);;">
+        <div class="navbar" id="navbar">
+            <img src="pic/logo.png" class="logo">
+            <<a href="#" style="text-decoration: none;">
+            <p style="margin-left:20px; font-size:25px" class="unselectable">Практика з веб-програмування</p>
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li class="unselectable"><a href="index.html">Головна</a></li>
+                    <li class="unselectable"><a href="index.html#feedback">Залишити відгук</a></li>
+                    <li class="unselectable"><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="centered">
+            <a href="#main" style="text-decoration: none;">
+            <h1 style="text-align: center;" class="unselectable">Редактори комп'ютерної графіки</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <h3 style="text-align: center;" class="unselectable">Графічні редактори, як і зображення, поділяються на Векторні та Растрові</h3><br>
+        <p class="unselectable">
+            <b>Растрові графічні редактори</b> – це програми, в яких можна створювати та обробляти растрові зображення. 
+            Графіку, яка записується в пам'ять комп'ютера як набір точок, називають растрової. Простіше кажучи, 
+            це програми обробки цифрових фотографій. <br><br>
+            <b>Векторні графічні редактори</b> призначені для роботи із векторною графікою. Так називають зображення, які 
+            записуються на згадку про комп'ютера як сукупність формул геометричних фігур. Простіше кажучи, якщо ви 
+            працюєте з фотографією, це растрова графіка, а якщо створюєте елементи за допомогою графічних інструментів 
+            і працюєте з геометричними фігурами — це векторна графіка. <br><br>
+            <b>До найпопулярніших графічних редакторів відносяться:</b>
+        </p>
+        <ol class="unselectable">
+            <li><a href="https://www.adobe.com/ua/products/photoshop.html">Adobe Photoshop</a></li>
+            <li><a href="https://www.adobe.com/ua/products/illustrator.html">Adone Illustrator</a></li>
+            <li><a href="https://www.coreldraw.com/ru/">CorelDraw</a></li>
+            <li><a href="https://www.wacom.com/ru-ru/getting-started/inkspace">Inkspace</a></li>
+            <li><a href="https://affinity.serif.com/ru/">Affinity Designer</a></li>
+        </ol>
+    </div>
+
+    <script>
+        navbar = document.getElementById('navbar')
+        menu = document.getElementById('menu')
+
+        window.onscroll = function(){
+            if(window.pageYOffset > menu.offsetTop){
+                navbar.classList.add('sticky')
+            } else {
+                navbar.classList.remove('sticky')
+            }
+        }
+    </script>
+
+</body>
+</html>

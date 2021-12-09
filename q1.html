@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Напрями графічного дизайну</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@450;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pic/logo-icon.png" type="image/icon type">
+</head>
+<body>
+    <div class="container" style="background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(15,25,30,0.9)),url(pic/q1.jfif);;">
+        <div class="navbar" id="navbar">
+            <img src="pic/logo.png" class="logo">
+            <a href="#" style="text-decoration: none;">
+            <p style="margin-left:20px; font-size:25px" class="unselectable">Практика з веб-програмування</p>
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li class="unselectable"><a href="index.html">Головна</a></li>
+                    <li class="unselectable"><a href="index.html#feedback">Залишити відгук</a></li>
+                    <li class="unselectable"><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="centered">
+            <a href="#main" style="text-decoration: none;">
+            <h1 style="text-align: center;" class="unselectable">Напрямки у графічному дизайні</h1>
+            </a>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <h2 style="text-align: center;" class="unselectable">У сучасному світі основними напрямками графічного дизайну є:</h2>
+
+        <ul class="unselectable">
+            <li>
+            <b>Брендинг та створення фірмового стилю.</b> Кожна компанія хоче мати власний стиль, завдяки якому 
+            вона стане відомою серед потенційних клієнтів. Його розробляє графічний дизайнер. На основі 
+            вподобань замовника він створює логотип та фірмовий знак організації. <br><br>
+            <img src="pic/q1-logo.jpg" height="350px" style="margin: auto; display: block;"><br>
+            </li><li>
+            <b>Графічний дизайн простору.</b> До цього напрямку відносяться знаки, покажчики – за ними люди орієнтуються 
+            на вулицях, метро, ​​великих бізнес та торгових центрах. Тобто всі ті таблички, які ми бачимо на вулиці 
+            та у будівлях, є роботою графічного дизайнера. <br><br>
+            <img src="pic/q1-roadsign.jfif" height="350px" style="margin: auto; display: block;"><br>
+            </li><li> 
+            <b>Розробка дизайну реклами.</b> Ще один досить популярний напрямок, який передбачає візуалізацію ідей 
+            рекламників. Нерідко візуалізація відіграє важливу роль у рекламі. <br><br>
+            <img src="pic/q1-ad.jfif" height="350px" style="margin: auto; display: block;"><br>
+            </li><li>
+            <b>Розробка шрифтів.</b> У цьому напрямку потрібне створення легкочитаних та оригінальних шрифтів. Їхня 
+            розробка вимагає знання великої кількості правил та нюансів, але незважаючи на це фахівцям вдається 
+            створювати щось нове у цьому напрямі. <br><br>
+            <img src="pic/q1-font.jpg" height="350px" style="margin: auto; display: block;"><br>
+            </li><li>
+            <b>Дизайн для Інтернету.</b> Досить затребувані фахівці, які розробляють дизайн для веб-сайтів, щоб віртуальне 
+            середовище відповідало двом вимогам: естетичність та зручність для користувачів. <br><br>
+            <img src="pic/q1-site.png" height="350px" style="margin: auto; display: block;"><br>
+            </li><li>
+            <b>Розробка дизайну для газет, книжок, журналів.</b> За цим напрямком дизайнер створює сітку верстку та 
+            опрацьовує стилістику для кожної рубрики. Також у його завдання входить створення графічних елементів, 
+            робота над обкладинкою та контроль за правильним кадруванням малюнків та форматуванням тексту. <br><br>
+            <img src="pic/q1-book.jpg" height="350px" style="margin: auto; display: block;"><br>
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        navbar = document.getElementById('navbar')
+        menu = document.getElementById('menu')
+
+        window.onscroll = function(){
+            if(window.pageYOffset > menu.offsetTop){
+                navbar.classList.add('sticky')
+            } else {
+                navbar.classList.remove('sticky')
+            }
+        }
+    </script>
+
+</body>
+</html>

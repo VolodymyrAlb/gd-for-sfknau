@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Колірні моделі (RGB, CMYK, HSB)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@450;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pic/logo-icon.png" type="image/icon type">
+</head>
+<body>
+    <div class="container" style="background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(15,25,30,0.9)),url(pic/q2.jfif);;">
+        <div class="navbar" id="navbar">
+            <img src="pic/logo.png" class="logo">
+            <a href="#" style="text-decoration: none;">
+            <p style="margin-left:20px; font-size:25px" class="unselectable">Практика з веб-програмування</p>
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li class="unselectable"><a href="index.html">Головна</a></li>
+                    <li class="unselectable"><a href="index.html#feedback">Залишити відгук</a></li>
+                    <li class="unselectable"><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="centered">
+            <a href="#main" style="text-decoration: none;">
+            <h1 style="text-align: center;" class="unselectable">Колірні моделі (RGB, CMYK, HSB)</h1>
+            </a>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <h2 style="text-align: center;" class="unselectable">Колірна модель - це...  </h2><br>
+        <p class="unselectable">
+            ...термін, що позначає абстрактну модель опису представлення кольорів у вигляді кортежів чисел, 
+            зазвичай із трьох або чотирьох значень, званих колірними компонентами або колірними координатами. 
+            Разом з методом інтерпретації цих даних безліч кольорів моделі визначає колірний простір.
+        </p><br>
+        <h2 class="unselectable" style="text-align: center;" >RGB</h2><br>
+        <p class="unselectable">
+            <b>RGB</b> – абревіатура англійських слів Red, Green, Blue – червоний, зелений, синій. 
+            Адитивна (Add, англ. - Додавати) колірна модель, як правило, служить для виведення зображення 
+            на екрани моніторів та інші електронні пристрої. Як видно з назви – складається з синього, червоного 
+            та зеленого кольорів, які утворюють усі проміжні. Має великий колірний охоплення.
+            <br>
+
+            Головне, що потрібно розуміти, це те, що адитивна колірна модель передбачає, що вся палітра кольорів складається 
+            з крапок, що світяться. Тобто на папері, наприклад, неможливо відобразити колір у колірній моделі RGB, оскільки 
+            папір колір поглинає, а не світиться сам собою. Підсумковий колір можна отримати, додаючи до вихідної чорної поверхні, 
+            що не світиться, відсотки від кожного з ключових кольорів.
+        </p><br>
+
+        <img src="pic/q2-rgb.jpg" height="350px" style="margin: auto; display: block;"><br>
+
+        <h2 class="unselectable" style="text-align: center;" >CMY(K)</h2><br>
+        <p class="unselectable">
+            <b>CMYK</b> Cyan, Magenta, Yellow, Key color – субтрактивна (subtract, англ. – віднімати) схема формування кольору, 
+            що використовується в поліграфії для стандартного тріадного друку. Має менший, у порівнянні з RGB, колірне охоплення.
+            <br>
+
+            CMYK називають субстрактивною моделлю тому, що папір та інші друковані матеріали є поверхнями, що відбивають світло. 
+            Зручніше вважати, скільки світла відбилося від тієї чи іншої поверхні, ніж скільки поглинулося. Таким чином, якщо 
+            відняти з білого три первинні кольори – RGB, ми отримаємо трійку додаткових кольорів CMY. "Субтрактивний" означає 
+            "віднімається" - з білого віднімаються первинні кольори.
+            <br>
+
+            <b>Key Color (чорний)</b> використовується в цій колірній моделі як заміна змішування в рівних пропорціях фарб тріади CMY. 
+            Справа в тому, що лише в ідеальному варіанті при змішуванні фарб тріади виходить чистий чорний колір. На практиці ж 
+            він вийде, швидше, брудно-коричневим – внаслідок зовнішніх умов, умов поглинання фарби матеріалом та неідеальності 
+            барвників. До того ж, зростає ризик неприведення в елементах, надрукованих чорним кольором, а також перезволоження 
+            матеріалу (паперу).
+        </p><br>
+
+        <img src="pic/q2-cmyk.jpg" height="350px" style="margin: auto; display: block;"><br>
+
+        <h2 class="unselectable" style="text-align: center;" >HSB</h2><br>
+        <p class="unselectable">
+            <b>HSB</b> - Модель, яка в принципі є аналогом RGB, вона заснована на її кольорах, але відрізняється системою координат.
+            <br>
+
+            Будь-який колір у цій моделі характеризується тоном (Hue), насиченістю (Saturation) та яскравістю (Brightness). 
+            Тон – це власне колір. Насиченість – відсоток доданої до кольору білої фарби. Яскравість – відсоток доданої чорної 
+            фарби. Отже, HSB – триканальна колірна модель. Будь-який колір у HSB виходить додаванням до основного спектру чорної 
+            чи білої, тобто. практично сірої фарби. Модель HSB не є суворою математичною моделлю. Опис кольорів у ній відповідає 
+            кольорам, сприйманих оком. Справа в тому, що око сприймає кольори, як такі, що мають різну яскравість. Наприклад, 
+            спектральний зелений має більшу яскравість, ніж спектральний синій. У HSB всі кольори основного спектру (каналу тону) 
+            вважаються такими, що мають 100% яскравість. Насправді, це не відповідає дійсності.
+            <br>
+
+            Хоча модель HSB декларована як апаратно-незалежна, насправді її основі лежить RGB. У будь-якому випадку HSB конвертується 
+            в RGB для відображення на моніторі і CMYK для друку, а будь-яка конвертація не обходиться без втрат.
+        </p><br>
+
+        <img src="pic/q2-hsb.jpg" height="350px" style="margin: auto; display: block;">
+
+    </div>
+
+    <script>
+        navbar = document.getElementById('navbar')
+        menu = document.getElementById('menu')
+
+        window.onscroll = function(){
+            if(window.pageYOffset > menu.offsetTop){
+                navbar.classList.add('sticky')
+            } else {
+                navbar.classList.remove('sticky')
+            }
+        }
+    </script>
+
+</body>
+</html>
